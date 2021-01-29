@@ -29,9 +29,7 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
+<!--- img {border: 5px solid #8075ff;} --->
 
 h1,
 h2,
@@ -76,16 +74,19 @@ footer {
 }
 
 .introduction {
+  background-color: #ffffff;
 }
+
 
 #badge {
   height: 120px;
   width: 120px;
   background-color: #bbb;
+  transition: background-color 1s;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -103,13 +104,24 @@ footer {
   font-size: 125%;
 }
 
+#bears {
+  margin-bottom: 20px;
+}
+
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  border: 5px solid #4a6ac3;
+}
+
+.image-container img:nth-of-type(2) {
+  border: 5px solid #4b8c92;
+}
+
+.image-container img:nth-of-type(3) {
+  border: 5px solid #2b9b34;
 }
 
 .tigers {
@@ -117,15 +129,47 @@ footer {
   color: #f0e100;
 }
 
+.tigers h3 {
+  color: #EADAFB;
+}
+
+.tigers h2 {
+  color: #EADAFB;
+}
+
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
 }
 
+.giraffe h3 {
+  color: #F4743B;
+}
+
+.giraffe1p {
+  font-size: 115%;
+}
+
+.elephants {
+  background-color: #b8b77e;
+  color: #4D0A48;
+}
+
+.elephants h2 {
+  color:#13243A;
+}
+
+.elephants h3 {
+  color:#13243A;
+}
+
+.news {
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -166,11 +210,22 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 25px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+}
+
+
+.education button {
+  font-size: 120%;
+  cursor: pointer;
+}
+
+.education button:hover {
+  background-color: #463fa0;
 }
 
 /*Membership*/
@@ -188,8 +243,30 @@ footer {
   color: #ff7f11;
 }
 
+.membership p {
+  width: 700px;
+  margin-left: 550px;
+}
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-box;
+  width: 28%;
+}
+
+.programs .button1 {
+  background-color: #4a6ac3;
+}
+
+.programs .button2 {
+  background-color: #4b8c92;
+}
+
+.programs .button3 {
+  background-color: #2b9b34;
+}
+
+.programs .card a {
+  color:white;
+  text-decoration: none;
 }
